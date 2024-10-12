@@ -20,7 +20,7 @@ function Bill({
             className=" rounded-md bg-[#c5e4e7ba] h-8 px-2 w-full text-right"
             placeholder="0"
             value={bill}
-            onChange={(e) => setBill(e.target.value)}
+            onChange={(e) => setBill(+e.target.value)}
           />
         </form>
       </div>
@@ -77,7 +77,7 @@ function Bill({
                 className="h-full w-full text-right px-2 focus:border-[#26c0ab
 ] focus:border-2"
                 value={tip}
-                onChange={(e) => setTip(e.target.value)}
+                onChange={(e) => setTip(+e.target.value)}
               />
             </form>
           )}
@@ -92,7 +92,7 @@ function Bill({
             className=" rounded-md bg-[#c5e4e7ba] h-8 px-2 w-full text-right"
             placeholder="0"
             value={numberOfPeople}
-            onChange={(e) => setNumberOfPeople(e.target.value)}
+            onChange={(e) => setNumberOfPeople(+e.target.value)}
           />
           <FaUser
             size={15}
